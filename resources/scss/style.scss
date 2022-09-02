@@ -1,0 +1,297 @@
+$red: #E32026;
+$black: #2F2F2F;
+$white: #FFFFFF;
+$grayWhite: #EDEDF4;
+$green: #3BB273;
+$greenPress: #2a7e51;
+
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+/* Footer - start */
+
+.footer-wrapper{
+    width: 100%;
+    display: flex;
+}
+
+.footer-right{
+    display: block;
+    max-width: 300px;
+    width: 100%;
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+.footer-right embed{
+    height: 100%;
+    display: block;
+    width: auto;
+    position: relative;
+}
+
+.footer-left{
+    background: $black;
+    display:flex;
+    flex-direction:column;
+    flex: 1;
+}   
+
+.footer-left-top{
+    border-bottom: 2px solid $red;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    padding: 25px 50px;
+    color:$white;
+}
+
+.footer-left-bottom{
+    display:flex;
+    flex-direction:row;
+    padding: 25px 50px;
+    color:$white;
+    justify-content: space-between;
+}
+
+
+.footer-nav-container{
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.footer-nav li{
+    list-style: none;
+}
+
+.footer-nav li a{
+    color: $white;
+    text-decoration: none;
+}
+
+.footer-nav{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-left: 1px solid $red;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+.footer-nav-title{
+    padding-right: 50px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+/* Footer - end */
+
+
+
+/* Header - start */
+
+header{
+    position: fixed;
+}
+
+#header-with-search{
+    width: 100%;
+    background-color: $white;
+}
+
+.header-wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.header-left{
+    height: 100%;
+}
+
+.header-right{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.header-right-top{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: $red;
+    width: 100%;
+    align-items: center;
+    align-content: center;
+    padding: 10px 25px;
+    z-index: 10;
+}
+
+.header-right-top-right{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: max-content;
+    height: 100%;
+    align-items: center;
+    align-content: center;
+    z-index: 8;
+}
+
+
+.header-right-bottom{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.header-search-container{
+    background-color: $grayWhite;
+    padding: 25px;
+}
+
+
+.header-search-form-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header-account-photo{
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+    border: 1px solid $white;
+    background-position: center;
+    background-size: cover;
+}
+
+.header-account-btn{
+    cursor:pointer;
+    background: transparent;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.header-account-btn:hover{
+    background: #2F2F2F35;
+}
+.header-account-btn a{
+    text-decoration: none;
+    color: $white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    width: max-content;
+}
+.header-account-btn a span{
+    margin-right: 10px;
+}
+
+.articol-nou-btn{
+    background:$green;
+    color: $white;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.articol-nou-btn:hover{
+    background: $greenPress;
+}
+
+
+.header-search-input-container{
+    max-width: 300px;
+    width: 100%;
+}
+
+.header-search-input-container select,
+.header-search-input-container input,
+.header-search-input-container textarea{
+    width: 100%;
+    border-radius: 100px;
+    background: $white;
+    color:#2F2F2F85;
+    font-weight: 600;
+    border: none;
+    padding: 7px 15px;
+}
+
+.header-search-input-container button{
+    padding: 7px 30px;
+    background: $green;
+    color: $white;
+    border-radius: 100px;
+    box-shadow: 0px 3px 5px 1px #2F2F2F55;
+    font-weight: 600;
+    text-transform: uppercase;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.header-search-input-container button:hover{
+    background: $greenPress;
+}
+
+.menu-burger{
+    background:none;
+    border: none;
+    outline: none;
+    width: max-content;
+    height: max-content;
+    cursor: pointer;
+    margin-left:20px;
+}
+
+.menu-burger span{
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: $white;
+    margin: 5px 0;
+}
+.menu-burger span{
+    transition: 0.3s ease;
+}
+
+.menu-opened .bar-1{
+    transform: translate(0px, 8px) rotate(45deg);
+}
+
+.menu-opened .bar-2{
+    transform: translateX(100%);
+    opacity: 0;
+}
+
+.menu-opened .bar-3{
+    transform: translate(0px, -8px) rotate(-45deg);
+}
+
+
+
+
+
+
+
+
+/* Header - end */

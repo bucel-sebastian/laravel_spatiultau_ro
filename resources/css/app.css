@@ -1,0 +1,24 @@
+
+
+.footer-right{
+    background: #FFF;
+}
+
+.footer-left{
+    background:#2F2F2F;
+    display:flex;
+    flex-direction:column;
+}
+
+.footer-left-top{
+    border-bottom: 2px solid #E32026;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+
+.footer-left-bottom{
+    display:flex;
+    flex-direction:row;
+}
